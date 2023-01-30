@@ -33,4 +33,4 @@ You'll need the Gerber file, the BOM file, and the Pick and Place (CPL) file. Al
 
 
 # For the Tinkerers
-The EasyEDA files are provided. All of the unused pads are called out with headers if you want to order the PCB that way. The design is licensed under CERN-OHL-S-2.0, any improvements or modifications should be made available under the same licence. If you have any suggestions please create a ticket on GitHub.
+The EasyEDA files are provided. All of the unused pads are called out with headers if you want to order the PCB that way. The design is licensed under CERN-OHL-S-2.0, any improvements or modifications should be made available under the same licence. If you see any isues or have any suggestions please create a ticket on GitHub.

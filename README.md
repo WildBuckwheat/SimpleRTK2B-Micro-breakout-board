@@ -15,7 +15,7 @@ The board also additional breakout points that facilitate experimentation and de
 2. Power status LED. If the Micro F9P has 3.3v then the LED is lit.
 3. Breakout connections for all the Micro's IO points. The side connections are a standard 0.1" pitch. You could solder female headers to the top to use jumper wires. You could solder male headers to the bottom to use the PCB on a breadboard. You can solder in wires. Or just leave them alone.
 4. Bottom connection point with serial 1 and power. A great connection point if you want to use a wired UART connection.
-5. Mounting holes. 1"x1.25" pattern, M3 holes.
+5. Mounting holes. 1"x1.25" pattern, M3 or 4-40 holes.
 
 
 # Power

@@ -6,6 +6,8 @@ The PCB is intended for [AgOpenGPS](https://github.com/farmerbriantee/AgOpenGPS 
 
 The board also additional breakout points that facilitate experimentation and development.
 
+These images are of a V1.0 board. V1.1 updates the LED resistor value to decrease LED brightness and flips the top layer silkscreen to match the text on the F9P sticker.
+
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Render%203D%20Top.png" width="400"> <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Render%203D%20Bottom.png" width="400">
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Populated.JPG" width="820"> 

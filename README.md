@@ -8,6 +8,8 @@ The board also additional breakout points that facilitate experimentation and de
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Render%203D%20Top.png" width="400"> <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Render%203D%20Bottom.png" width="400">
 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Populated.JPG" width="820"> 
+
 
 
 # Features
@@ -16,6 +18,7 @@ The board also additional breakout points that facilitate experimentation and de
 3. Breakout connections for all the Micro's IO points. The side connections are a standard 0.1" pitch. You could solder female headers to the top to use jumper wires. You could solder male headers to the bottom to use the PCB on a breadboard. You can solder in wires. Or just leave them alone.
 4. Bottom connection point with serial 1 and power. A great connection point if you want to use a wired UART connection.
 5. Mounting holes. 1"x1.25" pattern, M3 or 4-40 holes.
+
 
 
 # Power

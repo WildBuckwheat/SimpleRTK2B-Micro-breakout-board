@@ -28,6 +28,7 @@ You can power the board in 1 of these 3 ways:
 1. Through the USB plug.
 2. Through the VUSB connection on the bottom. Connect 5v.
 3. Through the 3V3 connection on the bottom. Connect 3.3v. This will bypass the SMD voltage regulator.
+
 Warning: Do not attempt to power the board in more than 1 way. If you do, you may damage your USB port or damage the SMD voltage regulator.
 
 

@@ -1,5 +1,7 @@
 # SimpleRTK2B-Micro-breakout-board
 
+**----> 2023 09 19 A new update is coming in the next week or so. The new version moves some pads around which make sit very easy to add an HC05 bluetooth module. If that's something that you care about, maybe you want to wait to order? <----**
+
 A small break out board for the ArduSimple SimpleRTK2B Micro.
 
 The PCB is intended for [AgOpenGPS](https://github.com/farmerbriantee/AgOpenGPS "github.com/farmerbriantee/AgOpenGPS") users that wish to use a [Micro F9P](https://www.ardusimple.com/product/simplertk2b-micro/ "Ardusimple") as a base station. A USB micro B connection on the PCB provides power to the Micro F9P and also allows for USB communication between the Micro F9P and the host.

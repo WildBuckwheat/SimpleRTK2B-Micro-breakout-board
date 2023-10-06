@@ -79,14 +79,17 @@ First connect the HC05 to a windows COM port. I am using a dedicated FTDI adapte
 
 Hold down the HC05 button and apply power to enter programming mode, the HC05 LED should blink slowly to indicate that it is in programming mode. Open the Arduino serial monitor and select "Both NL & CR" and "38400 baud." If you type and send "AT" (without quotations), the HC05 should return "OK." Do not forget the "Both NL & CR" step.
 
-- Send ```AT+NAME=F9P``` to set the name to F9P. Send ```AT+NAME?``` to have the name echo'd back to you.
-- Send ```AT+UART=115200,1,0``` to set the serial baud rate to 115,200 bps. Send ```AT+UART?``` to have the new baud rate echo'd back to you. This baud rate is only for the serial when not in programming mode. Programing mode is always 38,400 bps and cannot be changed.
-- Send ```AT+PSWD=1234``` to set the bluetooth password. Send ```AT+PSWD?``` to check the bluetooth password. Some HC05 versions won't let you change the password without further permissions, just check the password and use the default which is always 1234 or 0000.
+All the below without quotations
+
+   
+- Send ```bash AT+NAME=F9P ``` to set the name to F9P. Send "AT+NAME?" to have the name echo'd back to you.
+- Send "AT+UART=115200,1,0" to set the serial baud rate to 115,200 bps. Send "AT+UART?" to have the new baud rate echo'd back to you. This baud rate is only for the serial when not in programming mode. Programing mode is always 38,400 bps and cannot be changed.
+- Send "AT+PSWD=1234" to set the bluetooth password. Send "AT+PSWD?" to check the bluetooth password. Some HC05 versions won't let you change the password without further permissions, just check the password and use the default which is always 1234 or 0000.
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/AT_Commands.jpg" width="820"> 
 
 
-Connect the HC05 to the PCB. Only the center 4 connections are required. You can connects the HC05 State pin to the PCB NC pin if you want to. If you solder the HC05 EN pin to the PCB 3V3 pin then no damage will occur, but the HC05 will be stuck in programming mode, so don't connect these.
+Connect the HC05 to the PCB. Only the center 4 connections are required. You can solder the HC05 State pin to the PCB NC pin if you want to. If you solder the HC05 EN pin to the PCB 3V3 pin then no damage will occur, but the HC05 will be stuck in programming mode.
 
 Plug in the Micro F9P and connect it with a Micro USB cord to Windows. Follow the steps here to configure the F9P with the latest SingleAntennaRover config.
 https://github.com/farmerbriantee/AgOpenGPS_Boards/wiki/configuring-the-zed-f9p

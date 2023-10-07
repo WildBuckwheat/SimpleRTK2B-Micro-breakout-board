@@ -6,13 +6,13 @@ The PCB features a USB 2.0 Micro B connection, 3.3v voltage regulator, and IO br
 
 New for V2.0 is an RTK status LED and a small pinout change that allows for connection to an HC05 bluetooth module.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Batch.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Batch.jpg" width="820"> 
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/FrontBack.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/FrontBack.jpg" width="820"> 
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderFront.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderFront.jpg" width="820"> 
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderBack.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderBack.jpg" width="820"> 
 
 
 
@@ -52,7 +52,7 @@ There are many ways that you can use this PCB, here are a few.
 ## Use example 1 - RTK base station
 No soldering required. Plug a Micro F9P into the headers and connect a micro USB cord to your Raspberry Pi, Orange Pi, Windows machine, etc. Use RTKBase, SNIP, etc. The PCB's voltage regulator will regulate USB power to the required 3.3v and and allow USB communication to the host. Note that the red RTK LED will remain on, since a base station never has an RTK fix.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Powered.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Powered.jpg" width="820"> 
 
 ## Use example 2 - update F9P firmware/configuration
 Same as above, just plug the Micro F9P into the headers and connect a micro USB cord. Open U-Center in Windows and update your configuration or firmware. Perfect if the USB connections have broken off of your All In One board.
@@ -66,7 +66,7 @@ Open the USB COM port in AgIO and use the Micro F9P with AgOpenGPS. Use it for m
 ## Use example 6 - Bluetooth
 The bottom breakout point matches that of an inexpensive HC05 bluetooth module. Connect the bluetooth to your tablet, laptop, or phone (iPhone does not support HC05). With a USB power bank you can have a totally wireless solution, a 5000mah USB powerbank provides close to 24 hours of power. This makes a great temporary setup for mapping with an ATV, lightbar use, implement steer, etc.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/WithBluetoothSoldered.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/WithBluetoothSoldered.jpg" width="820"> 
 
 
 
@@ -75,16 +75,18 @@ There are different ways to setup the F9P and HC05 bluetooth module. Here is how
 
 First connect the HC05 to a windows COM port. I am using a dedicated FTDI adapter. You could also use an arduino with the ATmega removed, Teensy as a serial pass through, etc. If you have already soldered the HC05 then remove the Micro F9P and make your FTDI connections using the VUSB, TX1, RX1, and GND breakout points. Remember to connect TX to RX and RX to TX.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/FTDI_HC05.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/FTDI_HC05.jpg" width="820"> 
 
 Hold down the HC05 button and apply power to enter programming mode, the HC05 LED should blink slowly to indicate that it is in programming mode. Open the Arduino serial monitor and select "Both NL & CR" and "38400 baud." If you type and send "AT" (without quotations), the HC05 should return "OK." Do not forget the "Both NL & CR" step.
 
 All the below without quotations
-- Send "AT+NAME=F9P" to set the name to F9P. Send "AT+NAME?" to have the name echo'd back to you.
+
+   
+- Send ```bash AT+NAME=F9P ``` to set the name to F9P. Send "AT+NAME?" to have the name echo'd back to you.
 - Send "AT+UART=115200,1,0" to set the serial baud rate to 115,200 bps. Send "AT+UART?" to have the new baud rate echo'd back to you. This baud rate is only for the serial when not in programming mode. Programing mode is always 38,400 bps and cannot be changed.
 - Send "AT+PSWD=1234" to set the bluetooth password. Send "AT+PSWD?" to check the bluetooth password. Some HC05 versions won't let you change the password without further permissions, just check the password and use the default which is always 1234 or 0000.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/AT_Commands.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/AT_Commands.jpg" width="820"> 
 
 
 Connect the HC05 to the PCB. Only the center 4 connections are required. You can solder the HC05 State pin to the PCB NC pin if you want to. If you solder the HC05 EN pin to the PCB 3V3 pin then no damage will occur, but the HC05 will be stuck in programming mode.
@@ -94,4 +96,4 @@ https://github.com/farmerbriantee/AgOpenGPS_Boards/wiki/configuring-the-zed-f9p
 
 Once this has been completed, open the configuration view and navigate to PRT (Ports). Change the baudrate of UART1 to 115200. Press the send button. You can save this new configuration if you wish. All we just did is grab the latest AgOpenGPS config and change the serial 1 baud rate to the maximum baud rate supported by Windows bluetooth.
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/UCenter_bluetooth.JPG" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/BluetoothSetup/UCenter_bluetooth.jpg" width="820"> 

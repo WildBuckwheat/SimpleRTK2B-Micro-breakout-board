@@ -14,6 +14,8 @@ New for V2.0 is an RTK status LED and a small pinout change that allows for conn
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderBack.jpg" width="820"> 
 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Schematic_RTK2B Micro F9P Breakout Board v2_0.jpg" width="820"> 
+
 
 
 # Features
@@ -60,10 +62,12 @@ Same as above, just plug the Micro F9P into the headers and connect a micro USB 
 ## Use example 3 - Development
 All of the Micro F9P IO points are broken out to pads on standard 0.1" spacing. You can solder male headers to the bottom of the PCB and stick it on a breadboard. Or solder female headers to the PCB and use jumper wires. Or solder wires straight to the pads.
 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Breadboard.jpg" width="820"> 
+
 ## Use example 4 - Rover
 Open the USB COM port in AgIO and use the Micro F9P with AgOpenGPS. Use it for mapping, lightbar, or autosteer.
 
-## Use example 6 - Bluetooth
+## Use example 5 - Bluetooth
 The bottom breakout point matches that of an inexpensive HC05 bluetooth module. Connect the bluetooth to your tablet, laptop, or phone (iPhone does not support HC05). With a USB power bank you can have a totally wireless solution, a 5000mah USB powerbank provides close to 24 hours of power. This makes a great temporary setup for mapping with an ATV, lightbar use, implement steer, etc. If after connecting the bluetooth module you see two COM connections in Windows, use the lower numbered one.
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/WithBluetoothSoldered.jpg" width="820"> 

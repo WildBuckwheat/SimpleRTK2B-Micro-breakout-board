@@ -14,7 +14,7 @@ New for V2.0 is an RTK status LED and a small pinout change that allows for conn
 
 <img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/RenderBack.jpg" width="820"> 
 
-<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Schematic_RTK2B Micro F9P Breakout Board v2_1.jpg" width="820"> 
+<img src="https://github.com/WildBuckwheat/SimpleRTK2B-Micro-breakout-board/blob/main/Images/Schematic_RTK2B Micro F9P Breakout Board_v2.1.jpg" width="820"> 
 
 
 
